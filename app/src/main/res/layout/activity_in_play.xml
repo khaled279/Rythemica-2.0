@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rythemica.InPlay"
+    android:background="#000000"
+    >
+
+    <ImageView
+        android:id="@+id/sora"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/music123"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/previousone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/sora"
+        android:layout_toLeftOf="@+id/playon"
+        android:background="@drawable/circle_button"
+        android:scaleType="centerCrop"
+        android:src="@drawable/previous"
+        app:layout_constraintBottom_toBottomOf="@+id/playon"
+        app:layout_constraintEnd_toStartOf="@+id/playon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playon" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/nexton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/sora"
+        android:layout_toRightOf="@+id/playon"
+        android:background="@drawable/circle_button"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forward"
+        app:layout_constraintBottom_toBottomOf="@+id/playon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playon"
+        app:layout_constraintTop_toTopOf="@+id/playon" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/playon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sora"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle_pause"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
